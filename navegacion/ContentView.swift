@@ -13,9 +13,10 @@ struct ContentView: View {
             Text("Bienvenido a la app de Cuyos")
             Spacer()
             NavigationStack{
-                NavigationLink(destination: CuyosView()){
-                    HomeView()
+                NavigationLink(destination: ItemDetailsView()){
+                    ItemRowView()
                 }
+                Spacer()
             }
             Spacer()
             Text("Desarrollado por: Max")
