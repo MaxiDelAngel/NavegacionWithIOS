@@ -13,7 +13,25 @@ struct ContentView: View {
             Text("Bienvenido a la app de Cuyos")
             Spacer()
             NavigationStack{
-                NavigationLink(destination: ItemDetailsView()){
+                NavigationLink(
+                    destination:
+                                ItemDetailsView(name: "MaximusPrime", price: 23000)
+                )
+                {
+                    ItemRowView()
+                }
+                NavigationLink(
+                    destination:
+                                ItemDetailsView(name: "MaximusPrime", price: 23000)
+                )
+                {
+                    ItemRowView()
+                }
+                NavigationLink(
+                    destination:
+                                ItemDetailsView(name: "MaximusPrime", price: 23000)
+                )
+                {
                     ItemRowView()
                 }
                 Spacer()
@@ -27,3 +45,4 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
+
